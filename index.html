@@ -146,14 +146,14 @@
         <div class="style-div3">
             <p> I performed all methods by importing my data in ArcGIS</p>
             <p>
-            With the county shapefile: 
+            <strong>With the county shapefile: </strong>
             </p>
             <p>
             To clip the file to just Florida counties, I used the Select By Attribute tool remove all 
             features without 'Florida' as their state name. 
             </p>
             <p>
-            With the two CSVs: 
+            <strong>With the two CSVs: </strong>
             </p>
             <p>
                 I joined both CSV files to my clipped county boundary file. Then, I manipulated the symbology 
@@ -164,20 +164,28 @@
 
         <div class="style-div3">
             <p>
-                To analyze the point data:
+                <strong>To analyze the point data:</strong>
             </p>
             <p>
                 I used the Kernel Density tool in the geoprocessing tools toolbox. This gave me a raster 
                 layer indicating the areas in which there are the highest concentrations of hospitals. 
             </p>
             <p>
-                To analyze the choropleth maps: 
+                <strong>To analyze the choropleth maps: </strong>
             </p>
             <p>
                 I used the Cluster Analysis and Outlier Tool on each of the layers. This tool identified 
                 spatial clusters of features with high or low values. It also calculated local Moran's I value, 
                 a z-score, a pseudo p-value, and a code representing the cluster type for each statistically 
                 significant feature. 
+            </p>
+            <p>
+                <strong>To create the scatterplot: </strong>
+            </p>
+            <p>
+                I used the Create Chart feature on my joined data. I input the death rate by county as 
+                the x variable, and the percent of people below the poverty level as the y variable. Then, 
+                I exported the chart as a PNG. 
             </p>
         </div>
 
@@ -187,6 +195,9 @@
         <h2>Results</h2>
     </div>
     
+    <div class="heading-div">
+        <h4>Situation: </h4>
+    </div>
 
     <div class="heading-div">
         <img class="images" src="./images/hospitalpointslayout.png">
@@ -202,9 +213,12 @@
     </div>
 
     <div class="heading-div">
+        <h4>Analysis: </h4>
+    </div>
+    
+    <div class="heading-div">
         <img class="images" src="./images/kernellayout.png">
     </div>
-
     
     <div class="container">
         <div class="style-div1">
